@@ -12,7 +12,7 @@ module.exports = {
   router:{
     // base:"/www" // generate router
     // base:"/perfume_ec_web/dist/"
-    // base: "./"
+    base: "./" // 這是要的
     // base :"/perfume_ec_web/"
   },
   head: {
