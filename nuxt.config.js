@@ -2,15 +2,17 @@ const webpack = require('webpack')
 module.exports = {
   mode: 'universal',
   env: {
+    // /perfume_ec_web/dist/ compiler
     // title: process.env.npm_package_name || ''
     // baseUrl: process.env.BASE_URL || 'http://localhost:3000'
   },
   /*
   ** Headers of the page
   */
-  // router:{
+  router:{
     // base:"/www" // generate router
-  // },
+    base:"./"
+  },
   head: {
     // title: process.env.npm_package_name || '',
     title: '香水電商',
