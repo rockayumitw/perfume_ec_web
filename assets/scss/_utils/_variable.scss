@@ -1,0 +1,79 @@
+// 共用 -內寬度
+$container: 1110px;
+
+// 字體,陰影
+$font-family: "Roboto", sans-serif;
+$shadow:rgba(0,40,62,0.5);
+
+// them-語系
+// example: them-TW | them-EN
+// $them-lang:'TW','JP','EN','CN','KO';
+
+$font-size:(
+    xxl:    40px,  //h2
+    xl:     32px,  //h3
+    lg:     28px,  //h4
+    md:     24px,
+    sm:     20px,
+    xs:     16px,
+    xxs:    14px,
+    default:12px,
+);
+
+$font-line-height:(
+    xxl: 60px,
+    xl: 48px,
+    lg: 42px,
+    md: 36px,
+    sm: 32px,
+    xs: 30px,
+    xxs: 24px,
+    default: 22px,
+    mini: 18px,
+);
+
+$pic-group:(
+  'carousel':'/images/index1.jpg',
+  'pic-1':'/images/index2.jpg',
+  'pic-2':'/images/index3.png',
+  'pic-3':'/images/index4.jpg',
+  'pic-4':'/images/index5.jpg',
+  'pic-5':'/images/index6.jpg',
+  'pic-6':'/images/index7.jpg',
+  'pic-7':'/images/index8.jpg',
+  'pic-8':'/images/index9.jpg',
+  'subscription-background':'/images/index10.jpg',
+  'pro-1':'/images/products1.jpg',
+  'pro-7':'/images/products7.jpg',
+  'pro-3':'/images/products3.jpg',
+  'pro-4':'/images/products4.jpg',
+  'pro-5':'/images/products5.jpg',
+  'pro-8':'/images/products8.jpg',
+  'pro-10':'/images/products10.jpg',
+  'pro-11':'/images/products11.jpg',
+  'pro-12':'/images/products12.jpg',
+);
+
+// z-index
+$z-index: (
+  loading: 1050,
+  header: 1
+);
+
+// for BV
+$breakpoints:(
+    xxs: 320.98px, // ios se5
+    xs : 575.98px, 
+    sm : 767.98px,
+    md : 991.98px,
+    lg : 1199.98px,
+    xl : 1399.98px,
+);
+
+// 動畫前綴
+$experimental-support-for-webkit: true;
+$experimental-support-for-mozilla: true;
+$experimental-support-for-opera: true;
+$experimental-support-for-microsoft: true;
+$experimental-support-for-khtml: false;
+

@@ -1,0 +1,14 @@
+
+.b-toaster{
+    &.b-toaster-top-center{
+        top: 30% !important;
+    }
+    .toast {
+        text-align: center;
+        color: $primary;
+        .toast-header {
+            display: none;
+        }
+    }
+}
+  

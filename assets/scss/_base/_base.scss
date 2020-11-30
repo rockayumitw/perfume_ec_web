@@ -1,0 +1,82 @@
+
+*{
+    outline: 0;
+    @include box-sizing(border-box);
+}
+
+html,body{
+    font-family:$font-family !important;
+    scroll-behavior:smooth;
+    padding:0 !important;
+}
+
+.wrap{
+    overflow: hidden;
+    @include fixed-top-blank-height-use(56px,56px);
+    &.inner-page{
+        @include fixed-top-blank-height-use(188px,188px);
+        @include media-max(sm){
+            @include fixed-top-blank-height-use(96px,96px);
+        }
+    }
+    // @each $name in $them-lang {
+    //     &.them-#{$name}{
+    //         @include them('them-'+$name);
+    //     }
+    // }
+    .container{
+        max-width: $container;
+    }
+    ul{
+        padding: 0px;
+        margin: 0px;
+        li{
+            list-style: none;
+            padding: 0px;
+        }
+    }
+    p{
+        margin-bottom: 0;
+    }
+    a{
+        
+        &:hover{
+            text-decoration: none;
+        }
+    }
+    .material-icons{
+        font-size: 20px;
+        margin-right: 3px;
+    }
+}
+
+main{
+    h1{}
+    h2{
+        font-size: map-get($font-size, xxl);
+        line-height: map-get($font-line-height, xxl);
+        font-weight: bold;
+        margin-bottom: 0;
+    }
+    h3{
+        font-size: map-get($font-size, xl);
+        line-height: map-get($font-line-height, xl);
+        // font-weight: bold;
+        // @include media-max(xs){
+        //     font-size: map-get($font-size, xl);
+        //     line-height: map-get($font-line-height, xl);
+        // }
+    }
+    h4{
+        font-size: map-get($font-size, sm);
+        line-height: map-get($font-line-height, xs);
+    }
+    h5{
+        font-size: map-get($font-size, xs);
+        line-height: map-get($font-line-height, default);
+    }
+    h6{}
+    small{}
+}
+
+

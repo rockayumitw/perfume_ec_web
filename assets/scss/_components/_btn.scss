@@ -1,0 +1,55 @@
+//   button($color,$background,$HoverColor,$HoverBackground,$border)
+// btn-size | btn__class --color
+
+
+// size - bg/text
+// 350 - 透/白,透/黑     --transparent, -white
+// 190 - 棕/白 -brown
+// 160 - --
+// 130 - 白/棕 -white
+// 65 - 棕/白
+// 65 - 白/棕
+
+$btn-size:(
+  xl: 350,
+  lg: 190,
+  md: 160,
+  sm: 130,
+  xs: 65,
+);
+
+.btn{
+    width: 100%;
+    margin-bottom: 0px;
+    padding: 12px 0;
+    @each $name, $item in $btn-size{
+        &-#{$name}{
+            max-width: $item+px;
+            @if($name == xs){
+                padding: 8px 16px;
+                margin-bottom: 0px !important;
+            }
+        }
+    }
+    &-brown{
+        @include button($white,$primary,$white,lighten($primary,5%), 2px solid $primary);
+    }
+    &-white{
+        @include button($primary,$white,$white,$primary, 2px solid $primary);
+    }
+    &-right-radius{
+        border-radius: 0;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+    &-rectangle{
+        &--white{
+            border-radius: 50px;
+            @include button($white,'transparent',$brown,$white,1px solid $white);
+        }
+        &--black{
+            border-radius: 50px;
+            @include button($black,'transparent',$white,$black,1px solid $black);
+        }
+    }
+}

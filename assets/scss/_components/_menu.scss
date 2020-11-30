@@ -1,0 +1,52 @@
+
+// 產品選單
+.products-menu{
+    padding: 10px 0;
+    a{
+        color: white !important;
+        font-size: map-get($font-size,xs);
+        line-height: map-get($font-line-height,sm);
+        margin-right: 28px;
+        &:hover{
+            color: lighten($primary, 50%) !important;
+        }
+    }
+}
+
+// 會員中心選單
+.member-menu{
+    @include media-max(sm){
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 16px !important;
+    }
+    li{
+        color: $oslogray;
+        display: inline-block;
+        transition: .3s;
+        cursor: pointer;
+        &:after{
+            content: '';
+            display: block;
+            border-bottom: 2px solid transparent;
+        }
+        &:hover{
+            color: $primary;
+            transition: .3s;
+            &:after{
+                content: '';
+                transition: .3s;
+                display: block;
+                border-bottom: 2px solid $primary;
+            }
+        }
+        &.active{
+            color: $primary;
+            &:after{
+                content: '';
+                display: block;
+                border-bottom: 2px solid $primary;
+            }
+        }
+    }
+}

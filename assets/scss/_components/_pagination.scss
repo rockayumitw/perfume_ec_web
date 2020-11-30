@@ -1,0 +1,36 @@
+.pagination{
+    .page-link{
+        color: $black;
+    }
+    .page-item{
+        margin-right: 20px;
+        font-size: map-get($font-size, sm);
+        line-height: map-get($font-size, xs);
+        .page-link{
+            // background-color:transparent;
+            border: 0;
+            border-radius:0;
+            color: $black;
+            &:hover{
+                color: $primary;
+                background: transparent;
+            }
+        }
+        &.active{
+            .page-link{
+                color: $primary;
+                background-color: transparent;
+            }
+            &:after{
+                content: '';
+                display: block;
+                border-bottom: 1px solid $primary;
+            }
+        }
+        // &:last-child{
+        //     a{
+        //         background-color: map-get($pagination-group,'background-normal');
+        //     }
+        // }
+    }
+}

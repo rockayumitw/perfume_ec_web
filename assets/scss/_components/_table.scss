@@ -1,0 +1,40 @@
+.table-content{
+    overflow-x: auto;
+}
+
+.table{
+    @include media-max(lg){
+        width: 990px;
+    }
+    thead{
+        tr{
+            line-height: 14px;
+        }
+        th{
+            &:first-child{
+                width: 100px;
+            }
+            span{
+                font-size: 13px;
+                line-height: 13px;
+            }
+        }
+    }
+    tr{
+        line-height: 55px;
+        transition: .3s;
+        &:hover{
+            transition: .3s;
+            background: map-get($color-group,'primary');
+        }
+    }
+    td{
+        .btn{
+            padding: 12px;
+        }
+        &:last-child{
+            text-align: right;
+        }
+        border-bottom: 1px solid #CDDDCD;
+    }
+}

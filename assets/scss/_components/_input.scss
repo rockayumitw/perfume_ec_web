@@ -1,0 +1,48 @@
+
+//  width / height / fscolor / borderColor / fontsize / lineheight
+
+// 350/38/#818A91/#CED4DA 輝 16/19
+// 219/60/8d8d8d /#916000 棕 16/24
+// 160/50/8d8d8d/#916000 宗 16/24
+
+// $input-size:(
+//     xl: 350,
+//     lg: 220,
+//     md: 160,
+// );
+
+.form-group{
+    label{
+        margin-bottom: 0;
+        &.custom-control-label{
+            font-size: map-get($font-size, xs);
+            line-height: map-get($font-line-height, xxs);
+        }
+    }
+    input,select{
+        width: 100%;
+        border: 2px solid;
+        font-size: map-get($font-size, xs);
+        line-height: map-get($font-line-height, xxs);
+        @include transition(.3s);
+        &:focus{
+            border: 1px solid $primary !important;
+            @include transition(.3s);
+        }
+        &.input-xl{
+            padding: 16px 21px;
+        }
+        &.input-lg{
+            padding: 5px 20px;
+            border: 1px solid $alto;
+            // margin-bottom: 20px;
+        }
+        &.input-radius{
+            border-radius: 2px;
+        }
+        &.input-left-radius{
+            border-top-left-radius: 2px;
+            border-bottom-left-radius: 2px;
+        }
+    }
+}

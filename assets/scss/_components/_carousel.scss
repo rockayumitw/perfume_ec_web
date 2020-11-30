@@ -1,0 +1,33 @@
+.carousel{
+    background: url(map-get($pic-group,'carousel'));
+    background-size: cover;
+    width: 100%;
+    min-height: 870px;
+    @include media-max(md){
+        min-height: 480px;
+    }
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        @include media-max(xs){
+            justify-content: center;
+        }
+    }
+    .carousel-content{
+        max-width: 445px;
+        @include media-max(md){
+            max-width: 345px;
+        }
+        p{
+            margin-bottom: 8px;
+            font-size: map-get($font-size, md);
+            line-height: map-get($font-line-height, md);
+            @include media-max(xs){
+                max-width: 345px;
+                font-size: map-get($font-size, sm);
+                line-height: map-get($font-line-height, xs);
+            }
+        }
+    }
+}

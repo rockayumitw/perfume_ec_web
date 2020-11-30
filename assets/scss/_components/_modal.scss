@@ -1,0 +1,93 @@
+.modal{
+    &.__news{}
+    &.__edit{}
+    input{
+        background-color: map-get($table-group,'background');
+        border: 0;
+        color: map-get($table-group,'text');
+        padding: 16px;
+    }
+    .modal-header{
+        padding: 32px;
+        border: 0;
+    }
+    .modal-title{
+        font-weight: bold;
+    }
+    .modal-footer{
+        border: 1px solid map-get($table-group,'border');
+    }
+    .modal-body{
+        h5{
+            font-size: map-get($font-size, lg);
+            line-height: map-get($font-line-height, lg);
+            color: map-get($table-group,'text');
+            font-weight: bold;
+        }
+        padding: 0 32px 0;
+        .form-group{
+            padding-top: 24.5px;
+            padding-bottom: 24.5px;
+            border-bottom: 1px solid map-get($table-group,'border');
+            &:first-child{
+                padding-top: 0;
+            }
+            label{
+                margin-bottom: 0px;
+                font-size: map-get($font-size, sm);
+                line-height: map-get($font-line-height, md);
+            }
+            .btn{
+                width: 100% !important;
+                padding: 16px 0;
+                color: map-get($table-group,'border');
+                &.__not-verification{
+                    color: map-get($color-group,'danger');
+                    border: 1px solid map-get($color-group,'danger');
+                }
+            }
+        }
+        .input-group-text{
+            border: 0;
+            background: transparent;
+            input{
+                margin-right: 10px;
+                width: 20px;
+                height: 20px;
+            }
+            label{
+                color: map-get($color-group,'dark');
+                font-size: map-get($font-size, md);
+                line-height: map-get($font-line-height, md);
+            }
+        }
+        .user-info{
+            .user-pic{
+                border-radius: 0;
+                width: 140px;
+                height: 140px;
+            }
+            .user-content{
+                width: calc(100% - 172px);
+                h3{
+                    font-size: 24px;
+                    font-weight: bold;
+                    margin-bottom: 8px;
+                }
+                .user-email{
+                    display: block;
+                    margin-bottom: 20px;
+                    color: map-get($color-group, 'tip');
+                }
+            }
+        }
+        .danger-tip{
+            margin-bottom: 18px;
+        }
+        .dropdown{
+            padding: 16px;
+            border: 1px solid map-get($color-group,'dark');
+            border-radius: 2px;
+        }
+    }
+}

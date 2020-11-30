@@ -1,0 +1,75 @@
+.item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include media-max(sm){
+        flex-direction: column;
+        margin-bottom: 32px;
+    }
+    &:hover{
+        .item-pic{
+            transition: all .3s;
+            transform: scale(1.2);
+        }
+    }
+    .item-pic-box{
+        overflow: hidden;
+        padding: 0;
+    }
+    .item-pic{
+        margin: 0 auto;
+        transition: all .3s;
+        padding-bottom: 100%;
+        @each $name, $item in $pic-group  {
+            &.#{$name}{
+                background:url($item);
+                background-size: cover;
+                background-position: center center;
+                width: 100%;
+            }
+        }
+    }
+    h3{
+        font-weight: bold;
+        color: $black;
+    }
+    p{
+        margin-bottom: 16px;
+    }
+    .item-name{
+        font-size: map-get($font-size, md);
+        line-height: map-get($font-line-height, md);
+        font-weight: bold;
+        color: $black;
+    }
+    .item-classis-name{
+        color: $black;
+        font-size: map-get($font-size, xs);
+        line-height: map-get($font-line-height, xxs);
+    }
+    .item-description{
+        margin: 0 auto;
+    }
+    .item-price-box{
+        .delete{
+            color: $gray;
+            text-decoration: line-through;
+            margin-left: 8px;
+            font-size: map-get($font-size, xs);
+            line-height: map-get($font-line-height, xxs);
+        }
+        .special-price{
+            color: $black;
+            font-size: map-get($font-size, xs);
+            line-height: map-get($font-line-height, xxs);
+        }
+    }
+    .item-tool{
+        margin-bottom: 58px;
+        @include media-max(xs){
+            margin-bottom: 30px;
+        }
+    }
+}
+
+

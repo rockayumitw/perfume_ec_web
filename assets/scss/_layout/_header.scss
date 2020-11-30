@@ -1,0 +1,123 @@
+header{
+    padding: 4px 0;
+    @include z-index(header);
+    @include transition(.3s);
+    @include media-max(lg){
+        padding: 0;
+        padding-bottom: 0px;
+    }
+    &.pinned {
+        @include transform(translateY(0%));
+        @include transition(.3s);
+    }
+    &.unpinned {
+        @include transform(translateY(-100%));
+        @include transition(.3s);
+    }
+    &.sticky{
+        // background:map-get($headerGroup,'md-color');
+        padding-bottom: 0px !important;
+        padding-top: 0px !important;
+        @include transition(.3s);
+        @include media-max('sm'){
+            padding-bottom: 0px;
+            padding-top: 0px;
+        }
+        @include media-max('xs'){
+            padding-bottom: 0px;
+            padding-top: 0px;
+        }
+    }
+    .container{
+        @include media-max(md){
+            padding: 0;
+        }
+    }
+    .navbar-brand{
+        padding-left: 20px;
+    }
+    .nav-item{
+        margin-right: 36px;
+        &:last-child{
+            margin-right: 0;
+        }
+        a{
+            transition: .3s;
+            font-size: map-get($font-size, sm);
+            line-height: map-get($font-size, xs);
+            &:hover{
+                transition: .3s;
+                color: lighten($brown, 12%) !important;
+                @include media-max(md){
+                    color: lighten(white, 12%) !important;
+                }
+            }
+            @include media-max(lg){
+                padding: 18px 0;
+            }
+        }
+        @include media-max(lg){
+            margin-right: 0px;
+        }
+    }
+    .navbar{
+        padding: 0;
+        .navbar-toggler{
+            border: 0;
+            i{
+                width:100%;
+                background: $gray;
+                float:left;
+                @include transform(scale(.8));
+             }
+             width: 56px;
+             height: 56px;
+             border:none;
+             &:hover{
+                //  background:map-get($headerGroup,'lg-hover-color');
+             }
+             @include hamburger-style('rotate-x'); 
+        }
+    }
+}
+
+.navbar-collapse{
+    &.show{
+        .navbar-nav{
+            text-align: center;
+        }
+        .nav-item{
+            @include media-max(md){
+                background-color: $dovegray;
+                a{
+                    color: white;
+                }
+            }
+        }
+    }
+    .nav-link{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: $gray !important;
+    }
+}
+
+.tool{
+    .cart-count{
+        background: $primary;
+        color: white;
+        width: 15px;
+        height: 15px;
+        font-size: 10px;
+        position: absolute;
+        top: 5px;
+        right: 10px;
+        border-radius: 50px;
+        text-align: center;
+    }
+    .nav-link{
+        color: $gray !important;
+        position: relative;
+    }
+}

@@ -1,0 +1,94 @@
+.sidebar{
+    min-width: 300px;
+    padding: 32px;
+    height: 100%;
+    background: map-get($color-group,'primary');
+    position: fixed;
+    transition: .3s;
+    @include z-index(sidebar);
+    .logo{
+        margin-bottom: 32px;
+        display: block;
+    }
+    li{
+        margin-bottom: 31px;
+        font-size: map-get($font-size,md);
+        line-height: map-get($font-line-height, md);
+        font-weight: bold;
+        transition:.3s;
+        &:hover{
+            transition:.3s;
+            &:before{
+                content:'';
+                display:block;
+                border-left: 4px solid map-get($color-group,'third');
+                width: 4px;
+                height: 32px;
+                position:absolute;
+                left: 0;
+                transition:.3s;
+                @include media-max(md){
+                    display: none;
+                }
+            }
+        }
+        &.active{
+            transition:.3s;
+            color: map-get($color-group,'third');
+            a{
+                color: map-get($color-group,'third');
+            }
+            &:before{
+                content:'';
+                display:block;
+                border-left: 4px solid map-get($color-group,'third');
+                width: 4px;
+                height: 32px;
+                position:absolute;
+                left: 0;
+                transition:.3s;
+                @include media-max(md){
+                    display: none;
+                }
+            }
+        }
+        a{
+            color: map-get($color-group,'secondary');
+            transition:.3s;
+            display: flex;
+            align-items: center;
+            &:hover{
+                color: map-get($color-group,'third');
+                transition:.3s;
+            }
+            
+        }
+    }
+    .user-info{
+        position:absolute;
+        bottom: 32px;
+    }
+    @include media-max(md){
+        min-width: 50px;
+        transition: .3s;
+        .logo{
+            width: 50px;
+        }
+        li{
+            span{
+                &:nth-child(2){
+                    transition: .3s;
+                    display:none;
+                }
+            }
+        }
+        .user-info{
+            div{
+                &:nth-child(2){
+                    transition: .3s;
+                    display:none
+                }
+            }
+        }
+    }
+}
