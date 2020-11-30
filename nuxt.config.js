@@ -4,7 +4,7 @@ module.exports = {
   env: {
     // /perfume_ec_web/dist/ compiler
     // title: process.env.npm_package_name || ''
-    // baseUrl: process.env.BASE_URL || 'http://localhost:3000'
+    baseUrl: process.env.BASE_URL || 'http://localhost:3000'
   },
   /*
   ** Headers of the page
@@ -12,7 +12,8 @@ module.exports = {
   router:{
     // base:"/www" // generate router
     // base:"/perfume_ec_web/dist/"
-    base: "/perfume_ec_web/"
+    // base: "./"
+    // base :"/perfume_ec_web/"
   },
   head: {
     // title: process.env.npm_package_name || '',
@@ -30,7 +31,7 @@ module.exports = {
   /*
   ** Customize the progress-bar color
   */
-  loading: { color: '#fff' },
+  loading: { color: '#916019' },
   /*
   ** Global CSS
   */
@@ -71,6 +72,7 @@ module.exports = {
     /*
     ** You can extend webpack config here
     */
+    analyze: true,
     extend (config, ctx) {
     },
     vendor: ['aos'],
