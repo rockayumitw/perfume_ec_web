@@ -1,24 +1,24 @@
 {
-  "publicPath": "../_nuxt/",
+  "publicPath": "/perfume_ec_web/_nuxt/",
   "all": [
     "../server/index.spa.html",
     "../server/index.ssr.html",
-    "13477e11f33ce9319ba6.js",
+    "05d7ab553d3f36b5804a.js",
     "1f056c1e5c345d4d80d1.js",
     "21c2ccd47a30b30e4eab.js",
     "25ef112d0764b23dd8d2.js",
     "69ae41a41f46fc7fc533.js",
-    "871a02fa273342218541.js",
+    "6fcdfec72689ea0f336f.js",
     "93435ccd2d464c89ba8e.js",
     "LICENSES",
     "c652a3c6b8db67bdcfcd.js",
     "c82d5796a69ced655728.js"
   ],
   "initial": [
-    "13477e11f33ce9319ba6.js",
+    "05d7ab553d3f36b5804a.js",
     "21c2ccd47a30b30e4eab.js",
     "93435ccd2d464c89ba8e.js",
-    "871a02fa273342218541.js"
+    "6fcdfec72689ea0f336f.js"
   ],
   "async": [
     "1f056c1e5c345d4d80d1.js",
@@ -1944,12 +1944,12 @@
     ]
   },
   "assetsMapping": {
-    "13477e11f33ce9319ba6.js": "6fca0322",
+    "05d7ab553d3f36b5804a.js": "6fca0322",
     "1f056c1e5c345d4d80d1.js": "3d09dd78",
     "21c2ccd47a30b30e4eab.js": "0859c165",
     "25ef112d0764b23dd8d2.js": "6a9ff4f5",
     "69ae41a41f46fc7fc533.js": "3cdf16e1",
-    "871a02fa273342218541.js": "1a3ae26b",
+    "6fcdfec72689ea0f336f.js": "1a3ae26b",
     "93435ccd2d464c89ba8e.js": "7ea1d828",
     "c652a3c6b8db67bdcfcd.js": "2fe6d9f7",
     "c82d5796a69ced655728.js": "63f76286"

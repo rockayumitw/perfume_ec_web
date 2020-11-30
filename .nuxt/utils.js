@@ -149,7 +149,7 @@ export async function setContext (app, context) {
       store: app.store,
       payload: context.payload,
       error: context.error,
-      base: '../',
+      base: '/perfume_ec_web/',
       env: {}
     }
     // Only set once
