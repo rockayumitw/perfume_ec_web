@@ -1,4 +1,4 @@
-# 06_prezman
+# perform_ec_web
 
 > My majestic Nuxt.js project
 
