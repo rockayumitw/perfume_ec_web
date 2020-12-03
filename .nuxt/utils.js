@@ -149,7 +149,7 @@ export async function setContext (app, context) {
       store: app.store,
       payload: context.payload,
       error: context.error,
-      base: '/perfume_ec_web/dist/',
+      base: './',
       env: {"baseUrl":"http://localhost:3000"}
     }
     // Only set once
