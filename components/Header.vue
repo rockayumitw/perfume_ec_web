@@ -19,12 +19,12 @@
         <b-collapse id="nav-collapse" is-nav>
           <!--<md-icon>menu</md-icon>-->
           <b-navbar-nav class="ml-auto">
-            <b-nav-item href="/products" order-sm="2" order-xl="1">
+            <b-nav-item href="/perfume_ec_web/dist/products" order-sm="2" order-xl="1">
               <span class="material-icons d-none d-lg-block"> store </span>
               Product
             </b-nav-item>
 
-            <b-nav-item href="/login" order-sm="1" order-xl="2">
+            <b-nav-item href="/perfume_ec_web/dist/login" order-sm="1" order-xl="2">
               <span class="material-icons d-none d-lg-block"> person </span>
               log in
             </b-nav-item>
