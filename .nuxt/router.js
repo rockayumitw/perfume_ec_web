@@ -20,7 +20,7 @@ Vue.use(Router)
 
 export const routerOptions = {
   mode: 'history',
-  base: decodeURI('/perfume_ec_web/'),
+  base: decodeURI('/perfume_ec_web/dist/'),
   linkActiveClass: 'nuxt-link-active',
   linkExactActiveClass: 'nuxt-link-exact-active',
   scrollBehavior,
