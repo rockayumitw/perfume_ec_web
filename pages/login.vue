@@ -3,7 +3,7 @@
     <div class="container">
       <div class="row d-flex align-items-center">
         <div class="col-12 col-md-8">
-          <img class="img-fluid" src="/assets/images/login1.jpg" alt="" />
+          <img class="img-fluid" src="../assets/images/login1.jpg" alt="" />
         </div>
         <div class="col-12 col-md-4">
           <div class="login-content">

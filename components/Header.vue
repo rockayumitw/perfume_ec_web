@@ -6,7 +6,7 @@
     <b-container>
       <b-navbar toggleable="lg" type="dark" variant="">
         <b-navbar-brand href="/">
-          <img width="128" src="/assets/images/d’Perfume@2x.png" alt="" />
+          <img width="128" src="../assets/images/d’Perfume@2x.png" alt="" />
         </b-navbar-brand>
         <div class="tool d-flex align-items-center">
           <nuxt-link
