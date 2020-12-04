@@ -4,7 +4,11 @@
       <div class="bar"></div>
     </div>
     <div class="loading-logo text-center">
-      <img class="logo fadeIn" src="../../assets/images/d’Perfume@2x.png" alt="" />
+      <img
+        class="logo fadeIn"
+        src="../../assets/images/d’Perfume@2x.png"
+        alt=""
+      />
     </div>
   </div>
 </template>
@@ -24,7 +28,7 @@ export default {
       line.classList = "line fadeOut";
       bar.classList = "bar fadeOut";
       loadingMask.classList = "loading-mask fadeOut";
-    }, 7000);
+    }, 6000);
   },
 };
 </script>
