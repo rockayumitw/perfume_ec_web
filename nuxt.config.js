@@ -12,8 +12,8 @@ module.exports = {
   router:{
     // base:"/www" // generate router
     // base:"/perfume_ec_web/dist/"
-     base: "./"
-    // base :"/perfume_ec_web/"
+    //  base: "./"
+    base :"/perfume_ec_web/"
   },
   head: {
     // title: process.env.npm_package_name || '',
